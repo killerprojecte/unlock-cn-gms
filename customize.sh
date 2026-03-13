@@ -3,14 +3,6 @@
 # Function to find the first available XML permission file
 find_origin() {
     for file in \
-        /system/etc/permissions/services.cn.google.xml \
-        /system/etc/permissions/com.oppo.features.cn_google.xml \
-        /vendor/etc/permissions/services.cn.google.xml \
-        /product/etc/permissions/services.cn.google.xml \
-        /product/etc/permissions/cn.google.services.xml \
-        /product/etc/sysconfig/cn_feature.xml \
-        /my_bigball/etc/permissions/oplus_google_cn_gms_features.xml \
-        /my_product/etc/permissions/oplus_google_cn_gms_features.xml \
         /odm/etc/permissions/com.gnss.bds_preference.xml \
         /my_heytap/etc/permissions/my_heytap_cn_gms_features.xml; do
         if [ -e "$file" ]; then
